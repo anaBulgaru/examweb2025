@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container{
+    max-width: 1200px;
+    
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+.col {
+    flex: 1 0 0%;
+}
+
+/* NAVIGATION */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.auth-buttons button {
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.signup {
+    background-color: black;
+    color: white;
+}
+
+.login {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+/* HEADER*/
+.header {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #eee;
+    font-size: 24px;
+    font-weight: 600;
+    background-image:url('img/shu-Romania-Transylvania-Peles-494393290-1440x823.jpg');
+    background-position: center;
+}
+
+/* FEATURES */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.feature {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature > a{
+    text-decoration: none;
+    color: black;
+}
+
+.feature > a:hover{ 
+    text-decoration: none;    
+    color: blue;
+}
+
+/* BENEFITS */
+.benefits {
+    display: grid;
+    grid-template-areas: "a a";
+    gap: 10px;
+    grid-auto-columns: auto;   
+    text-align: justify;      
+    margin: 20px;
+}
+
+/* PRICING */
+.pricing {
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+}
+
+.plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.plan {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* SIGNUP FORM */
+.signup-form {
+    text-align: center;
+    padding: 50px;
+    background: #f8f9fa;
+}
+
+.signup-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup-form form input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+}
+
+.signup-form button {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.reservation, .map-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #eef6f9;
+}
+
+.reservation form {
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.reservation input, 
+.reservation select,
+.reservation textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.reservation button {
+    background-color: #005577;
+    color: white;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.reservation button:hover {
+    background-color: #0077a1;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    margin-top: 50px;
+}
