@@ -25,6 +25,19 @@ body {
     flex: 1 0 0%;
 }
 
+/* Menu */
+/*
+@media (min-width: 768px) {
+    #menu {
+        display: flex !important;
+    }
+  }
+*/
+
+.hidden {
+    display: none !important;
+}
+
 /* NAVIGATION */
 .navbar {
     display: flex;
@@ -80,7 +93,8 @@ body {
     background-position: center;
 }
 
-/* FEATURES */
+
+
 .features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -212,3 +226,5 @@ footer {
     background: white;
     margin-top: 50px;
 }
+
+

@@ -1,4 +1,5 @@
 window.onload = function () {
+    alert(window.innerWidth);
     if (window.innerWidth <= 768) {
         console.log("Appareil portable détecté");
       }
